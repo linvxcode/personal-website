@@ -1,0 +1,16 @@
+import HeaderExp from "./Partial/HeaderExp";
+import BodyExp from "./Partial/BodyExp";
+
+
+  export default function Experience() {
+  
+    return (
+      <div className="h-screen flex flex-col mt-[100px] mb-[100px] max-md:mt-[200px]">
+        <div>
+       <HeaderExp />
+        </div>
+        <BodyExp />
+      </div>
+    );
+  }
+  
