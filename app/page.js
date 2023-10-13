@@ -17,17 +17,17 @@ export default function Home() {
       </div>
       <div
         id="about"
-        className="relative clipp max-md:mt-[300px] max-sm:mt-[300px] max-[390px]:mt-[700px] px-12 lg:px-24 flex "
+        className="relative clipp max-md:mt-[300px] max-sm:mt-[300px] max-[390px]:mt-[700px] px-11 lg:px-24 flex "
       >
         <About />
       </div>
-      <div id="skill" className="relative max-sm:mt-[30px] px-12 lg:px-24 flex ">
+      <div id="skill" className="relative max-sm:mt-[30px] px-11 lg:px-24 flex ">
         <Skill />
       </div>
-      <div id="triple" className="relative h-[200vh] max-sm:mt-[100px] px-12 lg:px-24 flex mb-[300px]">
+      <div id="triple" className="relative h-[200vh] max-sm:mt-[100px] px-11 lg:px-24 flex mb-[300px]">
         <Experience />
       </div>
-      <div className="mt-[300px] max-md:mt-[80rem] relative lg:px-24 px-12 bg-[#e2e8f0] dark:bg-[#232425]">
+      <div className="mt-[300px] max-md:mt-[80rem] relative lg:px-24 px-11 bg-[#e2e8f0] dark:bg-[#232425]">
         <Footer />
       </div>
     </div>

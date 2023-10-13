@@ -65,7 +65,7 @@ const LayoutFirst = () => {
                 repeatType: "reverse",
               }}
               >
-                <Image className={`${items.rounded}`} quality={100} loading="lazy" src={items.iconPath} alt="asd" width={150} height={150} style={{width: "auto", height: "auto"}} />
+                <Image className={`${items.rounded}`} quality={100} priority={true} src={items.iconPath} alt="asd" width={150} height={150} style={{width: "auto", height: "auto"}} />
               </motion.div>
             </Button>
           </motion.div>
