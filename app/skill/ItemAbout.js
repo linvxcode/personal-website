@@ -112,7 +112,7 @@ export const item = [
       // backgroundColor: "#2654b98f",
       backgroundColor: "bg-[#3a334b]",
       // #2654b98f
-      mt: "ml-[450px] max-md:ml-[150px] mr-[100%] top-[-20px] max-md:top-[-60px]",
+      mt: "ml-[370px] max-md:ml-[150px] mr-[100%] top-[-20px] max-md:top-[-60px]",
       w: "w-[90px] max-md:w-[80px]",
       h: "h-[90px] max-md:h-[80px]",
       iconPath: (

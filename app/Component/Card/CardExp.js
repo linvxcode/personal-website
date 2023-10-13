@@ -9,14 +9,14 @@ const CardExp = ({ project }) => {
 
   return (
     <div>
-      <Card className="shadow-none dark:bg-[#232425] focus:opacity-100 hover:shadow-md border-[1px] dark:border-neutral-700 border-neutral-200">
+      <Card className="shadow-none dark:bg-zinc-800  focus:opacity-100 hover:shadow-md border-[1px] dark:border-neutral-700 border-neutral-200">
         <div className=" relative ">
           <Motion
             className={` w-[100%]  flex justify-center opacity-100 items-center object-contain   `}
             initial={{ height: 20 }}
             viewport={{ once: true }}
             whileInView={{
-              height: 200,
+              height: 120,
               transition: {
                 type: "spring",
                 duration: 3,

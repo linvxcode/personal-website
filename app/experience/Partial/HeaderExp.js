@@ -6,7 +6,7 @@ import { texts } from "../Text";
 const HeaderExp = () => {
   return (
     <div>
-      <motion.h1 className="text-4xl lg:text-6xl flex w-[100%] font-semibold tracking-tight font-mons">
+      <motion.h1 className="text-4xl lg:text-6xl flex w-[100%] font-semibold tracking-tight">
         {texts.map((text, index) => (
           <motion.span
             key={index}

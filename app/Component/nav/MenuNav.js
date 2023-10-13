@@ -33,7 +33,7 @@ function MenuNav({isOpen, setIsMenuOpen}) {
         <motion.ul
           variants={{
             open: {
-              clipPath: "inset(0% 0% 0% 0% round 10px)",
+              clipPath: "inset(0% 0% 0% 0% round 0px)",
               transition: {
                 type: "spring",
                 bounce: 0,

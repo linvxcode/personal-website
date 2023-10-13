@@ -19,7 +19,7 @@ export const Nav = () => {
     return (
         <>
        <Navbar
-      maxWidth="full"
+      maxWidth="lg"
       className="fixed h-[80px] max-sm:px-0 px-12"
       isMenuOpen={isMenuOpen} onMenuOpenChange={setIsMenuOpen}
       

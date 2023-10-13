@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <div>
       <motion.div
-        className="flex items-end h-[300px] pt-5 pb-5 justify-center flex-col "
+        className="flex h-[300px] pt-5 pb-5 justify-center flex-col "
         initial={{ height: 50 }}
         viewport={{ once: true }}
         whileInView={{
@@ -35,7 +35,7 @@ const Footer = () => {
           }}
         >
           <motion.div
-            className="flex "
+            className="max-w-7xl mx-auto flex justify-center items-center"
             initial={{
               translateX: "-20px",
               translateY: "10px",
