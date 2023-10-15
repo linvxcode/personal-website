@@ -20,3 +20,10 @@ body {
 box-sizing: border-box;
 }
 
+.disable-animation {
+  animation: none !important;
+  transition: none !important;
+  transform: none !important;
+  opacity: 1 !important;
+  /* Add other animation-related properties you want to disable */
+}

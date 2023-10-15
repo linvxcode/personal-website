@@ -6,7 +6,7 @@ const Wrap = () => {
   return (
     <div>
       <Motion
-        className="mt-5 flex justify-start gap-3 md:gap-10 bg-[#f9fafb] p-5  rounded-2xl  max-[390px]:p-2 dark:bg-[#27272a]"
+        className="mt-5 flex justify-start gap-3 md:gap-10 bg-zinc-100/30 p-5  rounded-2xl  max-[390px]:p-2 dark:bg-zinc-800/80"
         // initial={{ translateY: 100, opacity: 0, scaleY: 0.1 }}
         // whileInView={{
         //   translateY: 0,

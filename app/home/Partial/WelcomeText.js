@@ -19,7 +19,7 @@ const WelcomeText = () => {
         // }}
         // viewport={{ once: true }}
       >
-        <h1 className=" text-3xl max-md:text-2xl text-center text-default-500 dark:text-gray-300">
+        <h1 className=" text-3xl max-md:text-xl text-center text-default-500 dark:text-gray-300">
           Welcome to My Portofolio
         </h1>
       </Motion>

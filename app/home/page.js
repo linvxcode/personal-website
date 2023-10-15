@@ -13,7 +13,7 @@ const First = () => {
   // })
   
   return (
-    <div className="lg:px-24 px-12 h-screen  mt-10 ">
+    <div className="lg:px-24 px-12  mt-10 ">
       <div className="">
         <div>
           <StartFirst/>

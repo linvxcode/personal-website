@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <div>
       <motion.div
-        className="flex h-[300px] pt-5 pb-5 justify-center flex-col "
+        className="flex h-[300px] pt-8 pb-8 justify-center flex-col "
         initial={{ height: 50 }}
         viewport={{ once: true }}
         whileInView={{
@@ -54,7 +54,7 @@ const Footer = () => {
               },
             }}
           >
-            <h1 className="text-2xl text-center font-medium">
+            <h1 className="text-2xl max-sm:text-xl text-center font-medium">
             &quot;Last but not least, I want to thank me for believing in me. I
               want to thank me for doing all this hard work, I want to thank me
               for having no days off&quot;

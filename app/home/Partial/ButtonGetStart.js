@@ -15,9 +15,7 @@ const svgVariants = {
 };
 
 const ButtonGetStart = () => {
-  const GetStartSvg = dynamic(() => import('./GetStartSvg'), {
-    loading: () => <p>Loading...</p>,
-  })
+  const GetStartSvg = dynamic(() => import('./GetStartSvg'))
 
   const buttonControls = useAnimation();
   const svgControls = useAnimation();

@@ -16,9 +16,7 @@ const GitVariants = {
 };
 
 const ButtonContact = () => {
-    const ContactSvg = dynamic(() => import('./ContactSvg'), {
-        loading: () => <p>Loading...</p>,
-    })
+    const ContactSvg = dynamic(() => import('./ContactSvg'))
   const buttonGitControls = useAnimation();
   const gitControls = useAnimation();
 
