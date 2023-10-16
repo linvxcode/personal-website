@@ -2,31 +2,41 @@
 import Image from "../Component/Img/Image";
 import { Nav } from "../Component/nav/Nav";
 import About from "../about/About";
+import Orbit from "../about/Extras/Orbit";
 import Experience from "../experience/Experience";
 import Footer from "../footer/Footer";
 import Backgound from "../home/Extras/Backgound";
 import Meteor from "../home/Extras/Meteor";
 import First from "../home/page";
 import Skill from "../skill/Skill";
-import { motion, useScroll, useTransform, useSpring, MotionConfig } from "framer-motion";
+import Orbit2 from "../home/Extras/Orbit2";
+import { motion, useScroll, useTransform, useSpring } from "framer-motion";
 import { useMediaQuery } from "react-responsive";
+import Sun from "../about/Extras/Sun";
+import Svg from "../about/Extras/Svg";
 
 const Home = () => {
-    const mobile = useMediaQuery({
-        query: '(min-width: 640px)'
-    })
-  const { scrollY } = useScroll();
-  const y2 =  useTransform(scrollY, [0, 400], [0, 400]);
-  const y1 = useTransform(scrollY, [0, 80], [0, 80]);
-    const tranlateY = useSpring(y2, {
-    stiffness: 100,
-    damping: 30,
-    restDelta: 0.001
+  const mobile = useMediaQuery({
+    query: "(min-width: 640px)",
   });
-    const tranlateX = useSpring(y1, {
+  const { scrollY } = useScroll();
+  const y2 = useTransform(scrollY, [0, 400], [0, 400]);
+  const x = useTransform(scrollY, [0, 900], [0, -400]);
+  const y1 = useTransform(scrollY, [100, 500], [0, 500]);
+  const tranlateY = useSpring(y2, {
     stiffness: 100,
     damping: 30,
-    restDelta: 0.001
+    restDelta: 0.001,
+  });
+  const tranlateX = useSpring(y1, {
+    stiffness: 100,
+    damping: 30,
+    restDelta: 0.001,
+  });
+  const tranlatex = useSpring(x, {
+    stiffness: 100,
+    damping: 30,
+    restDelta: 0.001,
   });
 
   return (
@@ -34,11 +44,21 @@ const Home = () => {
       <motion.div className="">
         <Backgound />
       </motion.div>
-      <motion.div
-        className="absolute top-0 left-[-50px]"
-        style={mobile ? { y: tranlateY , x: tranlateX, overflow: 'hidden'} : {}}
+      <motion.div className="overflow-x-clip  relative">
+        <motion.div
+          className="absolute top-0 left-[-70px] "
+          style={
+            mobile ? { y: tranlateY, x: tranlateX } : { transform: "none" }
+          }
         >
-        <Meteor />
+          <Meteor />
+        </motion.div>
+        <motion.div
+          className="absolute right-[360px] top-[370px] max-sm:hidden"
+          style={mobile ? { x: tranlatex } : { transform: "none" }}
+        >
+          <Orbit2 />
+        </motion.div>
       </motion.div>
       <motion.div className="max-w-7xl mx-auto">
         <Nav />
@@ -47,8 +67,12 @@ const Home = () => {
           className="relative h-screen flex justify-center max-md:h-[400px] max-md:mt-[100px] items-center flex-row flex-wrap  "
         >
           <First />
-
         </motion.div>
+        {/* <motion.div className="absolute z-[-9] top-0"
+        style={mobile ? {y: down, x: down2} : {transform: 'none'}}
+        >
+          <Sun />
+        </motion.div> */}
 
         <div className="absolute top-[100px] left-[-100px] z-[-9]">
           <Image
@@ -65,6 +89,11 @@ const Home = () => {
           className="relative clipp max-md:mt-[300px] max-sm:mt-[300px] max-[390px]:mt-[700px] px-11 lg:px-24 flex "
         >
           <About />
+
+          <motion.div className="absolute top-[100px] max-sm:hidden">
+            {/* <Orbit /> */}
+            <Svg />
+          </motion.div>
         </div>
         <div className="absolute right-0">
           <Image
