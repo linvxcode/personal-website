@@ -2,7 +2,6 @@
 import Image from "../Component/Img/Image";
 import { Nav } from "../Component/nav/Nav";
 import About from "../about/About";
-import Orbit from "../about/Extras/Orbit";
 import Experience from "../experience/Experience";
 import Footer from "../footer/Footer";
 import Backgound from "../home/Extras/Backgound";
@@ -12,7 +11,6 @@ import Skill from "../skill/Skill";
 import Orbit2 from "../home/Extras/Orbit2";
 import { motion, useScroll, useTransform, useSpring } from "framer-motion";
 import { useMediaQuery } from "react-responsive";
-import Sun from "../about/Extras/Sun";
 import Svg from "../about/Extras/Svg";
 
 const Home = () => {
@@ -46,7 +44,7 @@ const Home = () => {
       </motion.div>
       <motion.div className="overflow-x-clip  relative">
         <motion.div
-          className="absolute top-0 left-[-70px] "
+          className="absolute top-0 left-[-70px] max-md:hidden hidden dark:flex"
           style={
             mobile ? { y: tranlateY, x: tranlateX } : { transform: "none" }
           }
@@ -54,7 +52,7 @@ const Home = () => {
           <Meteor />
         </motion.div>
         <motion.div
-          className="absolute right-[360px] top-[370px] max-sm:hidden"
+          className="absolute right-[360px] top-[370px] max-md:hidden dark:flex hidden"
           style={mobile ? { x: tranlatex } : { transform: "none" }}
         >
           <Orbit2 />
@@ -68,11 +66,6 @@ const Home = () => {
         >
           <First />
         </motion.div>
-        {/* <motion.div className="absolute z-[-9] top-0"
-        style={mobile ? {y: down, x: down2} : {transform: 'none'}}
-        >
-          <Sun />
-        </motion.div> */}
 
         <div className="absolute top-[100px] left-[-100px] z-[-9]">
           <Image
@@ -86,13 +79,15 @@ const Home = () => {
 
         <div
           id="about"
-          className="relative clipp max-md:mt-[300px] max-sm:mt-[300px] max-[390px]:mt-[700px] px-11 lg:px-24 flex "
+          className="relative overflow-hidden clipp max-md:mt-[300px] max-sm:mt-[300px] max-[390px]:mt-[700px] px-11 lg:px-24 flex "
         >
           <About />
 
-          <motion.div className="absolute top-[100px] max-sm:hidden">
-            {/* <Orbit /> */}
+          <motion.div className="absolute top-[100px]">
+            <div className="flex w-full">
+
             <Svg />
+            </div>
           </motion.div>
         </div>
         <div className="absolute right-0">

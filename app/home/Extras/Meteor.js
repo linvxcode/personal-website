@@ -3,7 +3,7 @@ import React from 'react'
 
 const Meteor = () => {
   return (
-    <div className='opacity-10 dark:opacity-100'>
+    <div className=''>
       <Image src="/svg/elip.svg" alt="meteor" width={400} height={400} />
     </div>
   )

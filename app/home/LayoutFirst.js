@@ -4,9 +4,7 @@ import { Button, Link } from "@nextui-org/react";
 import React, { useState } from "react";
 import { motion, MotionConfig} from "framer-motion";
 import Image from "../Component/Img/Image";
-// import { item } from "./Item";
 import { useMediaQuery } from "react-responsive";
-import Mobile from "./Mobile/Mobile";
 
 
 
@@ -15,7 +13,6 @@ const LayoutFirst = () => {
   const isDekstop = useMediaQuery({
     query: '(min-width: 640px)'
   })
-  // const [isMobile, setIsMobile] = useState(false);
 
 
   const handleHover = (index) => {
@@ -94,7 +91,6 @@ const LayoutFirst = () => {
             whileHover={() => handleHover(index)}
             onMouseLeave={handleHoverLeave}
             initial={items.initialAnim  }
-            // whileInView={items.whileInView}
             viewport={{once: true}}
             animate={items.whileInView}
           >

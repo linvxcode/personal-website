@@ -7,7 +7,7 @@ const Svg = () => {
         pathLength: 0, opacity: 0
     },
     visible: (i) => {
-        const delay = 1 + i * 0.1;
+        const delay = 1 + i * 0.5;
         return {
           pathLength: 1,
           opacity: 1,
@@ -24,7 +24,6 @@ const Svg = () => {
     <div>
       <motion.svg width="978" height="1138" className="text-black" viewBox="0 0 978 1138" fill="none" xmlns="http://www.w3.org/2000/svg"
             initial="hidden"
-            // animate="visible"
             whileInView="visible"
             viewport={{once: true}}
       >
