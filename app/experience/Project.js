@@ -68,4 +68,15 @@ export const projects = [
       initial: { scale: 0.9 },
       whileInVIew: { scale: 1, transition: { type: "spring", duration: 1 } },
     },
+    {
+      name: "Landing Page Portofolio",
+      imgSrc: "/aset/sport.jpg",
+      Url: "https://sport-linvxcode.vercel.app/",
+      content: "Slicing Landing Page Portofolio From Figma To Next Js with framer motion and tailwind css",
+      imgBuild: "/svg/next.svg",
+      svg: "/svg/framer.svg",
+      svg2: "/svg/ts.svg",
+      initial: { scale: 0.9 },
+      whileInVIew: { scale: 1, transition: { type: "spring", duration: 1 } },
+    },
   ];
