@@ -17,7 +17,7 @@ const SecondText = () => {
               translateY: 0,
               transition: {
                 type: "spring",
-                duration: 1,
+                duration: 2,
                 stiffness: 100,
                 delay: 0.3,
               },

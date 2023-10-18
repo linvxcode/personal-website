@@ -26,7 +26,6 @@ export const Nav = () => {
     >
       <NavbarContent >
         <NavbarMenuToggle
-        
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
           className="lg:hidden"
         />
